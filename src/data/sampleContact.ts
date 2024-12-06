@@ -1,16 +1,16 @@
 import { Contact } from '../types/contact';
 
 export const sampleContact: Contact = {
-  name: 'Sarah Anderson',
-  title: 'Senior Software Engineer',
-  email: 'sarah.anderson@example.com',
+  name: 'Noah Peterson',
+  title: 'Full Stack Software Engineer',
+  email: 'noah.peterson@gmail.com',
   phone: '+1 (555) 123-4567',
-  website: 'www.sarahanderson.dev',
+  website: 'www.noahpeterson.dev',
   location: 'San Francisco, CA',
-  avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200&h=200',
+  avatar: 'https://res.cloudinary.com/dwmdxgd2z/image/upload/v1733487319/john.doe_hreyrs.jpg',
   social: {
-    linkedin: 'sarah-anderson',
-    twitter: '@sarahanderson',
-    github: 'sanderson',
+    linkedin: 'noah-peterson',
+    twitter: '@noah-peterson',
+    github: 'noah-peterson',
   },
 };

@@ -11,14 +11,15 @@ interface VCardProps {
 
 export const VCard: React.FC<VCardProps> = ({ contact }) => {
   const cardRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 to-purple-50 flex items-center justify-center p-6">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gradient-to-br from-indigo-50 to-purple-50">
       <div 
-        ref={cardRef} 
-        className="bg-white rounded-2xl shadow-xl p-8 max-w-md w-full"
+        ref={contentRef}
+        className="w-full max-w-md p-8 bg-white shadow-xl rounded-2xl"
       >
-        <div className="flex flex-col items-center text-center mb-6">
+        <div className="flex flex-col items-center mb-6 text-center">
           <Avatar src={contact.avatar} name={contact.name} size="lg" />
           <h1 className="mt-4 text-2xl font-bold text-gray-900">{contact.name}</h1>
           <p className="text-gray-600">{contact.title}</p>
@@ -35,11 +36,11 @@ export const VCard: React.FC<VCardProps> = ({ contact }) => {
           <div className="pt-4 border-t border-gray-200">
             <SocialLinks social={contact.social} />
           </div>
-
-          <div className="pt-4 flex justify-center">
-            <DownloadButton contact={contact} cardRef={cardRef} />
-          </div>
         </div>
+      </div>
+
+      <div className="mt-6">
+        <DownloadButton contact={contact} cardRef={contentRef} />
       </div>
     </div>
   );
