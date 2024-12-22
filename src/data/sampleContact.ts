@@ -1,16 +1,16 @@
 import { Contact } from '../types/contact';
 
 export const sampleContact: Contact = {
-  name: 'Noah Peterson',
+  name: 'Liviu F. Băncilă',
   title: 'Full Stack Software Engineer',
-  email: 'noah.peterson@gmail.com',
-  phone: '+1 (555) 123-4567',
-  website: 'www.noahpeterson.dev',
-  location: 'San Francisco, CA',
+  email: 'liviu.bancila95@gmail.com',
+  phone: '+40 746 966 818',
+  website: 'https://liviu-bancila.vercel.app/',
+  location: 'Timisoara, TM',
   avatar: 'https://res.cloudinary.com/dwmdxgd2z/image/upload/v1733487319/john.doe_hreyrs.jpg',
   social: {
-    linkedin: 'noah-peterson',
-    twitter: '@noah-peterson',
-    github: 'noah-peterson',
+    linkedin: 'https://www.linkedin.com/in/liviubancila/',
+    twitter: 'https://x.com/tech__nomad',
+    github: 'https://github.com/liviu-b',
   },
 };
