@@ -5,7 +5,7 @@ export const sampleContact: Contact = {
   title: 'Full Stack Software Engineer',
   email: 'liviu.bancila95@gmail.com',
   phone: '+40 746 966 818',
-  website: <a href="https://liviu-bancila.vercel.app/">My Website</a>,
+  website: "https://liviu-bancila.vercel.app/"
   location: 'Timisoara, TM',
   avatar: 'https://res.cloudinary.com/dwmdxgd2z/image/upload/v1733487319/john.doe_hreyrs.jpg',
   social: {
