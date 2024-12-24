@@ -5,7 +5,10 @@ export const sampleContact: Contact = {
   title: 'Full Stack Software Engineer',
   email: 'liviu.bancila95@gmail.com',
   phone: '+40 746 966 818',
-  website: 'https://liviu-bancila.vercel.app/',
+  website: {
+    url: 'https://liviu-bancila.vercel.app/work',
+    label: 'Visit My Website',
+  },
   location: 'Timisoara, TM',
   avatar: 'https://res.cloudinary.com/dwmdxgd2z/image/upload/v1733487319/john.doe_hreyrs.jpg',
   social: {
